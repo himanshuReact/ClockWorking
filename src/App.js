@@ -29,9 +29,9 @@ const Clock = () => {
 
   return (
     <>
-      <div>{hours}</div>
-      <div>{minutes}</div>
-      <div>{seconds}</div>
+      <div>
+        {hours > 12 ? 24 - hours : hours}:{minutes}:{seconds}
+      </div>
     </>
   );
 };
